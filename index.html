@@ -3,103 +3,317 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="PDF Insight turns dense PDFs into decision-ready intelligence with evidence-backed analysis, verified numbers, comparisons, risk tracking, and report-ready outputs.">
-  <meta name="theme-color" content="#f7f5f1">
+  <meta name="description" content="PDF Insight turns dense PDFs into decision-ready intelligence. Analyze, verify, compare, and understand complex documents with evidence-backed intelligence.">
+  <meta name="theme-color" content="#Faf9f7">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pdf-insight-fawn.vercel.app/">
+  <meta property="og:title" content="PDF Insight — Decision-ready intelligence from PDFs">
+  <meta property="og:description" content="Analyze, verify, compare, and understand complex documents with evidence-backed intelligence designed for decisions.">
+  <meta property="og:image" content="https://pdf-insight-fawn.vercel.app/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://pdf-insight-fawn.vercel.app/">
+  <meta property="twitter:title" content="PDF Insight — Decision-ready intelligence from PDFs">
+  <meta property="twitter:description" content="Analyze, verify, compare, and understand complex documents with evidence-backed intelligence designed for decisions.">
+  <meta property="twitter:image" content="https://pdf-insight-fawn.vercel.app/og-image.jpg">
+
   <title>PDF Insight — Decision-ready intelligence from PDFs</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://pdf-insight-fawn.vercel.app/">
   <link rel="stylesheet" href="/style.css">
+  <script src="/main.js" defer></script>
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="/">PDF <span>Insight</span></a>
-    <nav>
-      <a href="#capabilities">Capabilities</a>
-      <a href="#workflow">How it works</a>
-      <a href="/support.html">Support</a>
-      <a class="nav-cta" href="https://chatgpt.com/plugins/plugins_6ac7c28c76b48191bc1afafac9789dda">Open PDF Insight</a>
-    </nav>
+    <div class="shell header-inner">
+      <a class="brand" href="/" aria-label="PDF Insight Home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        PDF <span>Insight</span>
+      </a>
+      
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="#product">Product</a>
+        <a href="#workflow">How it works</a>
+        <a href="#use-cases">Use cases</a>
+        <a class="button button-primary" href="https://chatgpt.com/plugins/plugins_6ac7c28c76b48191bc1afafac9789dda">Open PDF Insight</a>
+      </nav>
+    </div>
   </header>
 
   <main>
     <section class="hero shell">
-      <div class="eyebrow">PDF analysis, built for decisions</div>
-      <h1>Turn dense PDFs into <em>decision-ready intelligence.</em></h1>
-      <p class="hero-copy">PDF Insight analyzes documents, verifies important numbers, surfaces contradictions and material changes, and turns evidence into clear findings, risks, actions, and recommendations.</p>
-      <div class="hero-actions">
-        <a class="button primary" href="https://chatgpt.com/plugins/plugins_6ac7c28c76b48191bc1afafac9789dda">Open PDF Insight</a>
-        <a class="button secondary" href="#capabilities">Explore capabilities</a>
-      </div>
-      <div class="proof-row">
-        <span>Evidence-backed</span><span>OCR-aware</span><span>Quantitative verification</span><span>Multi-document analysis</span>
-      </div>
-    </section>
-
-    <section class="statement">
-      <div class="shell statement-grid">
-        <div>
-          <div class="eyebrow">From document to decision</div>
-          <h2>Stop reading PDFs as isolated pages. Start reading them as evidence.</h2>
+      <div class="hero-content fade-in">
+        <span class="eyebrow">Product Intelligence</span>
+        <h1>Turn dense PDFs into <span class="text-serif">decision-ready</span> intelligence.</h1>
+        <p class="text-balance">Analyze, verify, compare, and understand complex documents with evidence-backed intelligence designed for decisions.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://chatgpt.com/plugins/plugins_6ac7c28c76b48191bc1afafac9789dda">Open PDF Insight</a>
+          <a class="button button-secondary" href="#workflow">See how it works</a>
         </div>
-        <p>Important decisions often depend on scattered figures, footnotes, tables, qualifiers, definitions, and version changes. PDF Insight connects those pieces so the conclusions stay traceable to the source.</p>
+      </div>
+      
+      <div class="hero-graphic fade-in" aria-hidden="true">
+        <div class="graphic-sidebar">
+          <div class="graphic-line w-1/2" style="height: 12px; margin-bottom: 16px;"></div>
+          <div class="graphic-line w-full"></div>
+          <div class="graphic-line w-3/4"></div>
+          <div class="graphic-line w-full"></div>
+          <div class="graphic-line w-1/2"></div>
+        </div>
+        <div class="graphic-main">
+          <div class="graphic-box" style="width: 80%;">
+            <div class="graphic-line w-1/2" style="margin-bottom: 12px; background: var(--border-dark)"></div>
+            <div class="graphic-line w-full" style="margin-bottom: 8px;"></div>
+            <div class="graphic-line w-full" style="margin-bottom: 8px;"></div>
+            <div class="graphic-line w-3/4" style="margin-bottom: 24px;"></div>
+            <span class="graphic-highlight">High Confidence Match</span>
+          </div>
+          <div class="graphic-box" style="width: 90%;">
+             <div class="graphic-line w-1/2" style="margin-bottom: 12px; background: var(--border-dark)"></div>
+            <div style="display: flex; gap: 16px;">
+              <div style="flex: 1;">
+                 <div class="graphic-line w-full" style="margin-bottom: 8px;"></div>
+                 <div class="graphic-line w-3/4"></div>
+              </div>
+               <div style="flex: 1;">
+                 <div class="graphic-line w-full" style="margin-bottom: 8px;"></div>
+                 <div class="graphic-line w-1/2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="capabilities" class="shell section">
-      <div class="section-heading">
-        <div class="eyebrow">Capabilities</div>
+    <section class="trust-strip fade-in">
+      <div class="shell trust-content">
+        <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Evidence-backed</div>
+        <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Quantitatively verified</div>
+        <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> OCR-aware</div>
+        <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Multi-document</div>
+        <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Decision-ready</div>
+      </div>
+    </section>
+
+    <section class="section shell problem-grid fade-in">
+      <div class="problem-text">
+        <span class="eyebrow">The Problem</span>
+        <h2>Information is buried.</h2>
+        <p>Important details in PDFs are often scattered across tables, hidden in footnotes, buried in charts, appended in long documents, or obscured across different versions.</p>
+        <p>Conflicting numbers and scanned pages make manual review tedious and error-prone. PDF Insight turns this complexity into structured intelligence.</p>
+      </div>
+      <div class="problem-visual" aria-hidden="true">
+        <!-- Abstract visual representation of scattered data -->
+        <div style="position: relative; width: 100%; aspect-ratio: 1; background: var(--bg-paper-alt); border-radius: var(--radius-lg); border: 1px solid var(--border-light); overflow: hidden;">
+          <div style="position: absolute; top: 20%; left: 10%; width: 40%; height: 6px; background: var(--border-dark); opacity: 0.2;"></div>
+          <div style="position: absolute; top: 25%; left: 10%; width: 30%; height: 6px; background: var(--border-dark); opacity: 0.2;"></div>
+          
+          <div style="position: absolute; top: 40%; right: 15%; width: 30%; height: 60px; border: 1px solid var(--accent-purple); border-radius: var(--radius-sm); background: var(--bg-surface); padding: 8px;">
+            <div style="width: 100%; height: 4px; background: var(--accent-purple); opacity: 0.5; margin-bottom: 6px;"></div>
+            <div style="width: 70%; height: 4px; background: var(--border-dark); opacity: 0.2;"></div>
+          </div>
+          
+          <div style="position: absolute; bottom: 20%; left: 20%; width: 50%; height: 40px; border: 1px dashed var(--text-secondary); border-radius: var(--radius-sm); padding: 8px; display: flex; align-items: center; gap: 8px;">
+             <div style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-purple);"></div>
+             <div style="flex: 1; height: 4px; background: var(--text-secondary); opacity: 0.3;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="product" class="section shell">
+      <div class="capabilities-header fade-in">
+        <span class="eyebrow">Core Capabilities</span>
         <h2>A rigorous layer between documents and decisions.</h2>
       </div>
-      <div class="cards">
-        <article class="card"><span class="number">01</span><h3>Evidence-backed analysis</h3><p>Trace findings to precise documents, pages, sections, tables, and figures instead of relying on vague summaries.</p></article>
-        <article class="card"><span class="number">02</span><h3>Verify the numbers</h3><p>Check totals, percentages, rates, growth, deltas, ratios, and variances while flagging missing inputs and denominator changes.</p></article>
-        <article class="card"><span class="number">03</span><h3>Compare documents</h3><p>Identify material changes, contradictions, changed assumptions, and what those differences mean for a decision.</p></article>
-        <article class="card"><span class="number">04</span><h3>Decision dashboards</h3><p>Turn evidence into structured KPIs, findings, risks, actions, and decisions without inventing unsupported details.</p></article>
-        <article class="card"><span class="number">05</span><h3>OCR-aware review</h3><p>Handle scanned and imperfect documents with explicit awareness of extraction quality and unresolved evidence.</p></article>
-        <article class="card"><span class="number">06</span><h3>Report-ready outputs</h3><p>Produce executive briefs, analytical reports, research summaries, audit findings, risk trackers, and comparison reports.</p></article>
+      <div class="bento-grid">
+        <article class="bento-item bento-1 fade-in">
+          <span class="number">01</span>
+          <h3>Evidence-backed analysis</h3>
+          <p>Verify important numbers against the source. Don't rely on black-box summaries.</p>
+        </article>
+        <article class="bento-item bento-2 fade-in">
+          <span class="number">02</span>
+          <h3>Quantitative verification</h3>
+          <p>Check totals, percentages, rates, growth, ratios, deltas, and variances.</p>
+        </article>
+        <article class="bento-item bento-3 fade-in">
+          <span class="number">03</span>
+          <h3>Compare documents</h3>
+          <p>Identify material changes, contradictions, and new risks across versions.</p>
+        </article>
+        <article class="bento-item bento-4 fade-in">
+          <span class="number">04</span>
+          <h3>OCR-aware analysis</h3>
+          <p>Handle scanned and image-based PDF content with appropriate confidence.</p>
+        </article>
+        <article class="bento-item bento-5 fade-in">
+          <span class="number">05</span>
+          <h3>Decision dashboards</h3>
+          <p>Turn findings into KPIs, risks, actions, and decisions.</p>
+        </article>
+        <article class="bento-item bento-6 fade-in">
+          <div class="bento-6-content">
+            <span class="number">06</span>
+            <h3>Source mapping</h3>
+            <p>Trace findings back to document, page, section, table, or figure seamlessly.</p>
+          </div>
+          <!-- Abstract map visual -->
+          <svg style="width: 120px; height: auto; color: var(--border-light);" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="10" width="80" height="80" rx="8" stroke="currentColor" stroke-width="4"/>
+            <path d="M10 40H90" stroke="currentColor" stroke-width="4" stroke-dasharray="4 4"/>
+            <path d="M40 10V90" stroke="currentColor" stroke-width="4" stroke-dasharray="4 4"/>
+            <circle cx="40" cy="40" r="6" fill="var(--accent-purple)"/>
+          </svg>
+        </article>
       </div>
     </section>
 
-    <section id="workflow" class="dark-section">
-      <div class="shell section">
-        <div class="section-heading light">
-          <div class="eyebrow">Workflow</div>
-          <h2>Inspect. Verify. Synthesize. Decide.</h2>
+    <section id="workflow" class="section section-dark">
+      <div class="shell">
+        <div class="fade-in">
+          <span class="eyebrow">Workflow</span>
+          <h2>How it works.</h2>
         </div>
-        <div class="workflow">
-          <div><strong>01</strong><h3>Inspect</h3><p>Map headings, pages, tables, figures, definitions, dates, qualifiers, footnotes, and document metadata.</p></div>
-          <div><strong>02</strong><h3>Verify</h3><p>Test quantitative claims and distinguish source facts from calculations, synthesis, and unresolved questions.</p></div>
-          <div><strong>03</strong><h3>Synthesize</h3><p>Connect evidence across sections or documents and identify contradictions, changes, risks, and implications.</p></div>
-          <div><strong>04</strong><h3>Decide</h3><p>Deliver a clear decision view with findings, risks, recommended actions, and confidence levels.</p></div>
+        <div class="workflow-grid fade-in">
+          <div class="workflow-step">
+            <strong>01 — Inspect</strong>
+            <h3>Extract structure</h3>
+            <p>Maps tables, figures, definitions, dates, units, and qualifiers across the entire document.</p>
+          </div>
+          <div class="workflow-step">
+            <strong>02 — Verify</strong>
+            <h3>Check claims</h3>
+            <p>Test important quantitative claims and identify inconsistencies within the data.</p>
+          </div>
+          <div class="workflow-step">
+            <strong>03 — Synthesize</strong>
+            <h3>Connect evidence</h3>
+            <p>Link information across the document or between multiple documents to form a complete picture.</p>
+          </div>
+          <div class="workflow-step">
+            <strong>04 — Decide</strong>
+            <h3>Produce findings</h3>
+            <p>Deliver a clear decision view with findings, risks, recommended actions, and decision-ready outputs.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="shell section">
-      <div class="section-heading">
-        <div class="eyebrow">Built for serious documents</div>
-        <h2>Useful wherever the PDF is part of the decision.</h2>
+    <section id="use-cases" class="section shell">
+      <div style="text-align: center; max-width: 600px; margin: 0 auto;" class="fade-in">
+        <span class="eyebrow">Built for Professionals</span>
+        <h2>Versatile use cases.</h2>
       </div>
-      <div class="use-cases">
-        <span>Business & finance</span><span>Academic research</span><span>Contracts & policy</span><span>Audit & due diligence</span><span>Technical reports</span><span>Board materials</span><span>Version reviews</span><span>Risk analysis</span>
+      <div class="use-case-tags fade-in">
+        <span class="tag">Business & Finance</span>
+        <span class="tag">Academic Research</span>
+        <span class="tag">Contracts & Policy</span>
+        <span class="tag">Audit & Due Diligence</span>
+        <span class="tag">Technical Reports</span>
+        <span class="tag">Board Materials</span>
+        <span class="tag">Version Reviews</span>
+        <span class="tag">Risk Analysis</span>
       </div>
     </section>
 
-    <section class="cta-section">
-      <div class="shell cta-box">
-        <div>
-          <div class="eyebrow">Ready to inspect the evidence?</div>
-          <h2>Give your PDFs a second pair of eyes.</h2>
+    <section class="section shell">
+      <div class="mockup-container fade-in">
+        <div class="mockup-header">
+          <div class="mockup-dot"></div>
+          <div class="mockup-dot"></div>
+          <div class="mockup-dot"></div>
+          <span style="margin-left: 8px; font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-secondary);">Illustrative Demo</span>
         </div>
-        <a class="button light-button" href="https://chatgpt.com/plugins/plugins_6ac7c28c76b48191bc1afafac9789dda">Open PDF Insight</a>
+        <div class="mockup-body">
+          <div class="mockup-row">
+            <h4>Finding</h4>
+            <p style="font-weight: 600; font-size: 1.125rem;">Revenue increased 18.4%</p>
+          </div>
+          <div class="mockup-row">
+            <h4>Evidence</h4>
+            <span class="mockup-badge">Annual Report — page 47</span>
+          </div>
+          <div class="mockup-row">
+            <h4>Verification</h4>
+            <div class="mockup-math">
+              <div>Calculated growth: 18.3%</div>
+              <div>Reported growth: 18.4%</div>
+            </div>
+            <p style="margin-top: 8px; color: var(--text-secondary); font-size: 0.875rem;">Difference likely due to rounding.</p>
+          </div>
+          <div class="mockup-row" style="border: none; padding: 0; margin: 0;">
+            <h4>Confidence</h4>
+            <span class="mockup-badge" style="color: var(--success); background: var(--success-bg); border-color: #bbf0d4;">High</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell evidence-section fade-in">
+      <span class="eyebrow">Philosophy</span>
+      <h2 style="margin-bottom: var(--sp-md);">Don't just get an answer. Know where it came from.</h2>
+      <p>PDF Insight clearly distinguishes between source facts, calculations, synthesis, and unresolved evidence, giving you the confidence to act.</p>
+    </section>
+
+    <section class="section shell fade-in">
+      <div style="max-width: 800px; margin: 0 auto; text-align: center; border-top: 1px solid var(--border-light); padding-top: var(--sp-4xl);">
+        <span class="eyebrow">Privacy & Trust</span>
+        <h2 style="font-size: 2rem; margin-bottom: var(--sp-md);">Your data stays in your control.</h2>
+        <p style="color: var(--text-secondary); margin-bottom: var(--sp-xl);">PDF Insight operates entirely within ChatGPT and does not independently maintain a separate document-storage database. We handle information consistently with our privacy commitments.</p>
+        <div style="display: flex; gap: var(--sp-lg); justify-content: center; font-family: var(--font-mono); font-size: 0.875rem;">
+          <a href="/privacy.html" style="text-decoration: underline;">Privacy Policy</a>
+          <a href="/terms.html" style="text-decoration: underline;">Terms of Service</a>
+          <a href="/support.html" style="text-decoration: underline;">Support</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell fade-in">
+      <div class="cta-box">
+        <h2>Turn your next PDF into a decision.</h2>
+        <a class="button button-accent" href="https://chatgpt.com/plugins/plugins_6ac7c28c76b48191bc1afafac9789dda">Open PDF Insight</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="shell footer-inner">
-      <div><strong>PDF Insight</strong><span>Decision-ready intelligence from PDFs.</span></div>
-      <div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/support.html">Support</a></div>
-      <small>© 2026 PDF Insight</small>
+      <div class="footer-brand">
+        <strong>PDF Insight</strong>
+        <p>Decision-ready intelligence from PDFs.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-links-col">
+          <h4>Product</h4>
+          <a href="https://chatgpt.com/plugins/plugins_6ac7c28c76b48191bc1afafac9789dda">Open Plugin</a>
+          <a href="#workflow">How it works</a>
+          <a href="#use-cases">Use cases</a>
+        </div>
+        <div class="footer-links-col">
+          <h4>Legal & Support</h4>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+          <a href="/support.html">Support</a>
+        </div>
+      </div>
+    </div>
+    <div class="shell footer-bottom">
+      <span>© 2026 PDF Insight</span>
+      <a href="mailto:sathasivamb95@gmail.com">sathasivamb95@gmail.com</a>
     </div>
   </footer>
 </body>
